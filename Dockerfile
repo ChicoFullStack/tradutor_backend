@@ -18,9 +18,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Etapa 6: Expor a porta em que a aplicação irá correr
-# O FastAPI/Uvicorn está configurado para usar a porta 8000.
-EXPOSE 8000
+# O FastAPI/Uvicorn está configurado para usar a porta 443.
+EXPOSE 443
 
 # Etapa 7: Definir o comando para iniciar a aplicação quando o contêiner arrancar
 # Usamos --host 0.0.0.0 para tornar a aplicação acessível de fora do contêiner.
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "443"]
