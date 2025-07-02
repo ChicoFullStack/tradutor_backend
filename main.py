@@ -34,7 +34,7 @@ class Participant:
         self.pc = RTCPeerConnection()
         self.source_language = "pt-BR"  # Idioma que o utilizador fala
         self.target_language = "en-US"  # Idioma para o qual ele quer receber traduções
-        self.translation_mode = "text_only"
+        self.translation_mode = "text_only"  # 'text_only' ou 'audio_and_text'
         self.audio_track = None
         self.video_track = None
 
